@@ -1,0 +1,30 @@
+@media screen and (max-width:1920px){
+	.profileContainer{
+		margin-top: 250px;
+		background-color: yellow;
+	}
+}
+
+@media screen and (max-width:1000px){
+	body{
+		
+	}
+	.container{
+		
+	}
+	.smallHeading1{
+		display: block;
+		color: #282741;
+		font-size: 3em;
+		clear: both;
+		margin-bottom: -50px;
+	}
+	.heading1{
+		display: none;
+	}
+	.about{
+		width:98%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
