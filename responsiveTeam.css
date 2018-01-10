@@ -18,7 +18,6 @@
 		font-size: 3em;
 		clear: both;
 		margin-bottom: -50px;
-		line-height: 90%;
 	}
 	.heading2{
 		display: none;
@@ -54,8 +53,5 @@
 	}
 	.nameTxt{
 		margin-top: 30%;
-	}
-	.about{
-		font-size: 10vw;
 	}
 }
