@@ -45,7 +45,9 @@ body{
 	margin-left: 50px;
 	margin-top: 18vh;
 	font-family: 'Roboto', sans-serif;
-	font-size: 10vw;
+}
+.abtTxt{
+	font-size: 22px;
 }
 .mdl-layout__drawer-button{
 	margin-top:18px;
@@ -55,4 +57,12 @@ header.custom-header{
 }
 .mdl-layout__header{
   background-color: #282741;
+}
+
+@media screen and (max-width:1000px){
+	.abtTxt{
+		font-size: 5vw;
+		padding-right: 3px;
+		line-height: 110%;
+	}
 }
