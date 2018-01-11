@@ -18,6 +18,21 @@ body{
 	height:100vh;
 	background: #f0f0f0;
 }
+.section3{
+	width:100%;
+	height:100vh;
+	background: #f0f0f0;
+}
+.section4{
+	width:100%;
+	height:100vh;
+	background: #f0f0f0;
+}
+.contact{
+	width:100%;
+	height:100vh;
+	background: #f0f0f0;
+}
 .heading1{
 	float: left;
 	font-family: 'Monoton', cursive;
@@ -31,17 +46,88 @@ body{
 	margin: 0px;
 	margin-top:-20px;
 }
+.heading6{
+	float: left;
+	font-family: 'Monoton', cursive;
+	color: #ffc85b;
+	background-color: #f6b11d;
+	font-size: 13vw;
+	margin-left: 0%;
+	line-height: 90%;
+	height: 100%;
+	margin: 0px;
+	margin-top:-20px;
+}
+.heading4{
+	float: right;
+	font-family: 'Monoton', cursive;
+	color: #A0CD0F;
+	background-color: #005A31;
+	font-size: 13vw;
+	margin-left: 0%;
+	line-height: 90%;
+	height: 100%;
+	margin: 0px;
+	margin-top:-20px;
+}
+.heading5{
+	float: left;
+	font-family: 'Monoton', cursive;
+	color: #b0b0b0;
+	background-color: #0f0f0f;
+	font-size: 13vw;
+	margin-left: 0%;
+	line-height: 90%;
+	height: 100%;
+	margin: 0px;
+	margin-top:-20px;
+}
 .ab{
 	margin-top:140px;
+}
+.smallHeading5{
+	font-family: 'Monoton', cursive;
+	display: none;
 }
 .smallHeading1{
 	font-family: 'Monoton', cursive;
 	display: none;
 }
+.smallHeading6{
+	font-family: 'Monoton', cursive;
+	display: none;
+	color: #f6b11d;
+}
+.smallHeading4{
+	font-family: 'Monoton', cursive;
+	display: none;
+	color: #f6b11d;
+}
+.smallHeading5{
+	font-family: 'Monoton', cursive;
+	display: none;
+	color: #0f0f0f;
+}
 .about{
 	width:50%;
 	height:68%;
 	float:left;
+	margin-left: 50px;
+	margin-top: 18vh;
+	font-family: 'Roboto', sans-serif;
+}
+.cont{
+	width:50%;
+	height:68%;
+	float:right;
+	margin-left: 50px;
+	margin-top: 18vh;
+	font-family: 'Roboto', sans-serif;
+}
+.sponsor{
+	width:50%;
+	height:68%;
+	float:right;
 	margin-left: 50px;
 	margin-top: 18vh;
 	font-family: 'Roboto', sans-serif;
@@ -54,4 +140,17 @@ header.custom-header{
 }
 .mdl-layout__header{
   background-color: #282741;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.mdl-button{
+	height: 50px;
+	width: 130px;
+	background-color: #0f0f0f;
 }

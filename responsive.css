@@ -19,12 +19,53 @@
 		clear: both;
 		margin-bottom: -50px;
 	}
+	.smallHeading6{
+		display: block;
+		color: #282741;
+		font-size: 3em;
+		clear: both;
+		margin-bottom: -50px;
+	}
+	.smallHeading4{
+		display: block;
+		color: #005A31;
+		font-size: 3em;
+		clear: both;
+		margin-bottom: -50px;
+	}
+	.smallHeading5{
+		display: block;
+		color: #0f0f0f;
+		font-size: 3em;
+		clear: both;
+		margin-bottom: -50px;
+	}
+	.heading5{
+		display: none;
+	}
+	.heading4{
+		display: none;
+	}
 	.heading1{
+		display: none;
+	}
+	.heading6{
 		display: none;
 	}
 	.about{
 		width:98%;
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	.cont{
+		width:98%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.sponsor{
+		width:98%;
+		margin-left: 10px;
+		margin-right: 10px;
+
 	}
 }
