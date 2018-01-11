@@ -17,28 +17,36 @@ body{
 .container3{
 	width:100%;
 	height:100vh;
-	background: #F4E5E2;
+	background: #f0f0f0;
 }
 .heading3{
 	float: left;
 	font-family: 'Monoton', cursive;
-	color: #A38A82;
+	color: #40af93;
 
 	font-size: 20vw;
 	margin-left: 0%;
-	margin-top: -25vh;
+	margin-top: 55vh;
 	float: left;
 	line-height: 50%;
+	position: absolute;
+}
+.text-cont{
+	height: 100%;
+	width:42vw;
+	float: left;
+	background-color: #374258;
+	margin-top: -19px;
 }
 .smallHeading3{
 	font-family: 'Monoton', cursive;
 	display: none;
 }
 .profiles3{
-	width:50%;
+	width:45%;
 	height:68%;
 	float:left;
-	margin-left: 10vw;
+	margin-left: 5vw;
 	margin-top: 12vh;
 }
 .profileContainer3{
@@ -120,12 +128,16 @@ body{
 }
 .quote{
 	font-family: 'theFont', sans-serif;
-		color: #A38A82;
+		color: #40af93;
 
 	font-size: 5vw;
 	margin-left: 3%;
-	margin-top: 8vh;
+	margin-top: 5vh;
 	float: left;
 	line-height: 90%;
 }
-
+.by{
+	font-size: 3vw;
+	margin-top: -10px;
+	margin-left: 50%;
+}
