@@ -5,13 +5,6 @@ body{
     font-family: theFont;
     src: url(font.otf);
 }
-img {
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
 /*Cards*/
 .card{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -20,20 +13,12 @@ img {
 .card:hover{
 	box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
 }
-.selectDisable {
+.noSelect {
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-}
-
-.selectEnable { 
-    -webkit-user-select: text;
-    -khtml-user-select: text;
-    -moz-user-select: text;
-    -o-user-select: text;
-    user-select: text;
 }
 .section1{
 	width:100%;
