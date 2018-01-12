@@ -16,7 +16,7 @@ body{
 }
 .container3{
 	width:100%;
-	height:100vh;
+	height:120vh;
 	background: #f0f0f0;
 }
 .heading3{
@@ -36,7 +36,7 @@ body{
 	width:42vw;
 	float: left;
 	background-color: #374258;
-	margin-top: -19px;
+	/* margin-top: -19px; */
 }
 .smallHeading3{
 	font-family: 'Monoton', cursive;
@@ -96,7 +96,7 @@ body{
 .profilePic3:hover .nameTxt3 {
 	cursor: pointer;
     display:block;
-    
+
 }
 #one{
 	margin-left: 20vw;

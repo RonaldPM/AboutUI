@@ -140,7 +140,11 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 .mdl-layout__drawer-button{
-	margin-top:18px;
+	/* margin-top:18px; */
+}
+.material-icons
+{
+	padding-top:12px;
 }
 header.custom-header{
   background-color: #282741;

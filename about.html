@@ -9,14 +9,16 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel='stylesheet' href='responsive.css' media='screen and (max-width:1000px)'>
-		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
 		<link rel='stylesheet' href='responsiveTeam.css' media='screen and (max-width:1000px)'>
-		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="scroll_nav_bar.js"></script>
 	</head>
 	<body>
+
 		<div class="demo-layout-transparent mdl-layout mdl-js-layout">
 			<header class="custom-header mdl-layout__header mdl-layout__header--colored">
 				<div class="mdl-layout__header-row">
@@ -37,7 +39,31 @@
 				</nav>
 			</div>
 		</div>
-		<div class='section1'>
+
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout  mdl-layout--fixed-header" id="scroll_nav_bar"
+					style="position:fixed;display:none;max-widthauto;height:auto;">
+			<header class="custom-header mdl-layout__header mdl-layout__header--colored" id='scroll_nav_bar_inner'>
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout-title mdl-color-text--white" id='nav_title_id'>MAGNOVITE</span>
+					<div class="mdl-layout-spacer"></div>
+					<!-- <nav class="mdl-navigation">
+						<a class="mdl-navigation__link mdl-color-text--white" id="mdl-custom-btn" href="#"><i class="material-icons">account_circle</i> Login</a>
+					</nav> -->
+				</div>
+			</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Magnovite</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="">Home</a>
+					<a class="mdl-navigation__link" href="Events.html">Technical Events</a>
+					<a class="mdl-navigation__link" href="NonEvents.html">Non-Technical Events</a>
+					<a class="mdl-navigation__link" href="about.html">About Us</a>
+				</nav>
+			</div>
+		</div>
+
+
+		<div id='about' class='scrollclass section1'>
 			<br />
 				<center>
 					<div class='smallHeading1' style="color: #282741">
@@ -46,7 +72,7 @@
 				</center>
 				<div class='about'>
 					<h1 style="color: #282741;font-size:45px;font-family: 'Josefin Sans', sans-serif;">Magnovite</h1>
-					
+
 					<p style="text-align:justify;font-family: 'Josefin Sans', sans-serif;font-size:22px;color:#9797b7;">Christ Faculty of Engineering and School of Architecture conducts annual techno cultural fest, with a multitude of events lined up in diverse categories of the Technical and Cultural ecosystem. Pre-Fest talks by some eminent personalities and very interesting workshops will ensure that students match up to the level that this Fest will demand. Lots of prizes, carnival zone and some extra ordinary performances during the cultural evening, all this will make sure no one goes back home disappointed.</p>
 				</div>
 				<div class='heading1'>
@@ -57,7 +83,7 @@
 					</div>
 				</div>
 		</div>
-		<div class='section3'>
+		<div id='sponsors' class='scrollclass section3'>
 			<br />
 				<center>
 					<div class='smallHeading6' style="color: #f6b11d;">
@@ -66,7 +92,7 @@
 				</center>
 				<div class='sponsor'>
 					<h1 style="color: #282741;font-size:45px;font-family: 'Josefin Sans', sans-serif;">Magnovite</h1>
-					
+
 					<p style="text-align:justify;font-family: 'Josefin Sans', sans-serif;font-size:22px;color:#9797b7;">Christ Faculty of Engineering and School of Architecture conducts annual techno cultural fest, with a multitude of events lined up in diverse categories of the Technical and Cultural ecosystem. Pre-Fest talks by some eminent personalities and very interesting workshops will ensure that students match up to the level that this Fest will demand. Lots of prizes, carnival zone and some extra ordinary performances during the cultural evening, all this will make sure no one goes back home disappointed.</p>
 				</div>
 				<div class='heading6'>
@@ -77,7 +103,7 @@
 					</div>
 				</div>
 		</div>
-		<div class='section4'>
+		<div id='specials' class='scrollclass section4'>
 			<br />
 				<center>
 					<div class='smallHeading4'>
@@ -102,8 +128,8 @@
 				</div>
 		</div>
 		<!--SECTION 3-->
-		<div class='container3'>
-			<br />
+		<div id='developers' class='scrollclass container3'>
+
 				<center>
 					<div class='smallHeading3'>
 						&lt;Developers/&gt;<br/>
@@ -111,14 +137,14 @@
 				</center>
 				<div class="text-cont">
 					<div class="quote">
-					"It works on my<br> Machine"<br> 
+					"It works on my<br> Machine"<br>
 					<p class="by">- web team</p>
 				</div>
 					<div class='heading3'>
-					&nbsp;&lt;/ &gt;			
+					&nbsp;&lt;/ &gt;
 				</div>
 				</div>
-					
+
 				<div class='profiles3'>
 					<center>
 						<div class='profilePic3' id="one">
@@ -199,10 +225,10 @@
 						</div>
 					</center>
 				</div>
-	
+
 
 		</div>
-		<div class='section2'>
+		<div id='heads' class='scrollclass section2'>
 			<br />
 				<center>
 					<div class='smallHeading2'>
@@ -286,7 +312,7 @@
 				</div>
 		</div>
 		<!--Contact-->
-		<div class='contact'>
+		<div id='contact' class='scrollclass contact'>
 			<br />
 				<center>
 					<div class='smallHeading5'>

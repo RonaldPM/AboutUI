@@ -5,12 +5,15 @@
 	}
 }
 
+p{
+	padding-right: 12px;
+}
 @media screen and (max-width:1000px){
 	body{
-		
+
 	}
 	.container{
-		
+
 	}
 	.smallHeading1{
 		display: block;
