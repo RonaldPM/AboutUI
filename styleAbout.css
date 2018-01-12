@@ -165,3 +165,20 @@ input[type=text], select, textarea {
 	width: 130px;
 	background-color: #0f0f0f;
 }
+
+@media only screen and (max-width: 500px)
+{
+
+	input[type=text], select, textarea {
+	    width: 200%;
+	    padding: 12px;
+	    border: 1px solid #ccc;
+	    margin-top: 6px;
+	    margin-bottom: 16px;
+	    resize: vertical;
+	}
+	.contact-form
+	{
+		padding-left: 20px;
+	}
+}
