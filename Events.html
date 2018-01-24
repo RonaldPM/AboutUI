@@ -255,15 +255,95 @@
               </button>
             </div>
           </div>
-          <nav class="demo-nav mdl-cell mdl-cell--12-col">
+          <nav class="demo-nav mdl-cell mdl-cell--12-col" id="mobutton">
             <div class="section-spacer"></div>
-            <a href="Events(1).html" class="demo-nav__button" title="show more">
+            <a class="demo-nav__button" title="show more">
               More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" onclick="document.getElementById('more').style.display = 'block';mbutton()">
                 <i class="material-icons" role="presentation">arrow_forward</i>
               </button>
             </a>
           </nav>
+          <div id="more">
+            <div class="demo-blog__posts mdl-grid">
+          <div class="mdl-card circuit mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Circuit Debugging</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Magnovite</strong>
+                <span>25 of 30 registered.</span>
+              </div>
+              <div class="mdl-layout-spacer"></div>
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+          <div class="mdl-card blueprint mdl-cell mdl-cell--4-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Blueprint</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Magnovite</strong>
+                <span>25 of 30 registered.</span>
+              </div>
+              <div class="mdl-layout-spacer"></div>
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+          <div class="mdl-card murder mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Murder Mystery</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Magnovite</strong>
+                <span>25 of 30 registered.</span>
+              </div>
+              <div class="mdl-layout-spacer"></div>
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">add</i>
+            </button>
+            </div>
+          </div>
+          <div class="mdl-card detect mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Detect and Avoid</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Magnovite</strong>
+                <span>25 of 30 registered.</span>
+              </div>
+              <div class="mdl-layout-spacer"></div>
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+          </div>
+          </div>
         </div>
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
@@ -334,5 +414,8 @@
         location.href = target;
       });
     });
+    function mbutton(){
+      document.getElementById('mobutton').style.display='none';
+    }
   </script>
 </html>

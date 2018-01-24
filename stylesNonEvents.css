@@ -2,8 +2,7 @@ html{
   overflow: auto;
 }
 body::before {
-    /*background-color: #282741;*/
-    background-image:url(images/bg1.jpg);
+    background-color: #282741;
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -15,12 +14,12 @@ body::before {
     top: 0;
     position: fixed;
 }
-/*header.custom-header{
+header.custom-header{
   background-color: #282741;
 }
 .mdl-layout__header{
   background-color: #282741;
-}*/
+}
 /*@media (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {

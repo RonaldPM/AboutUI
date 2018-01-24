@@ -26,6 +26,12 @@ header.custom-header{
     background-image: url('images/event-bg.jpg');
   }
 }
+#more{
+  display:none;
+}
+#mobutton{
+  display: block;
+}
 /*@media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
@@ -51,7 +57,6 @@ body .demo-blog {
   margin: 0 auto;
   flex-shrink: 0;
 }
-
 .demo-blog.mdl-layout .mdl-layout__content {
   padding-top: 230px;
   position: relative;

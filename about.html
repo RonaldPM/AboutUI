@@ -29,7 +29,7 @@
 					</nav-->
 				</div>
 			</header>
-			<div class="mdl-layout__drawer">
+			<div class="mdl-layout__drawer" style="z-index:100">
 				<span class="mdl-layout-title">Magnovite</span>
 				<nav class="mdl-navigation">
 					<a class="mdl-navigation__link" href="">Home</a>
@@ -40,18 +40,18 @@
 			</div>
 		</div>
 
-		<div class="demo-layout-transparent mdl-layout mdl-js-layout  mdl-layout--fixed-header" id="scroll_nav_bar"
-					style="position:fixed;display:none;width:100%;">
+		<!--div class="demo-layout-transparent mdl-layout mdl-js-layout  mdl-layout--fixed-header" id="scroll_nav_bar"
+					style="position:fixed;display:none;width:100%;height:auto">
 			<header class="custom-header mdl-layout__header mdl-layout__header--colored" id='scroll_nav_bar_inner'>
 				<div class="mdl-layout__header-row">
 					<span class="mdl-layout-title mdl-color-text--white" id='nav_title_id'>MAGNOVITE</span>
 					<div class="mdl-layout-spacer"></div>
 					<!-- <nav class="mdl-navigation">
 						<a class="mdl-navigation__link mdl-color-text--white" id="mdl-custom-btn" href="#"><i class="material-icons">account_circle</i> Login</a>
-					</nav> -->
+					</nav> >
 				</div>
 			</header>
-			<div class="mdl-layout__drawer">
+			<div class="mdl-layout__drawer" style="display:block;position:fixed;height:100%">
 				<span class="mdl-layout-title">Magnovite</span>
 				<nav class="mdl-navigation">
 					<a class="mdl-navigation__link" href="">Home</a>
@@ -60,7 +60,7 @@
 					<a class="mdl-navigation__link" href="about.html">About Us</a>
 				</nav>
 			</div>
-		</div>
+		</div-->
 
 
 		<div id='about' class='scrollclass section1'>
@@ -319,14 +319,14 @@
 						CONTACT-US
 					</div>
 				</center>
-				<div class='cont'>
-					<form class='contact-form' style='z-index:999;display:block;position:absolute;width:40%'>
+				<div class='cont' >
+					<form class='contact-form' >
 						<label for="email" style="font-size:2.5em;font-family: 'Josefin Sans', sans-serif;">Email:</label><br><br>
 						<input type="text" placeholder="Your full name..."><br><br>
 						<label for="subject" style="font-size:2.5em;font-family: 'Josefin Sans', sans-serif;">Message:</label><br><br>
 						<textarea id="subject" placeholder="Be creative..." style="height:170px"></textarea>
 						<br><br>
-						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="Submit">
+						<button  type="Submit">
 							Submit
 						</button>
 					</form>
