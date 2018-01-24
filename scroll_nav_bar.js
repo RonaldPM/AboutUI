@@ -7,6 +7,7 @@ var section_det=[
   ['Contact','0f0f0f']
 ];
 
+var ie_i=0;
 
 // alert(sec_det["About"][0]);
 // When the user scrolls down 20px from the top of the document, slide down the navbar
@@ -49,6 +50,11 @@ function scrollFunction() {
     }
 }
 
+var bro_key=0;
+// detect IE8 and above, and edge
+if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+    bro_key=1;
+}
 
 
 $(document).bind('scroll',function(e){
@@ -59,8 +65,14 @@ $(document).bind('scroll',function(e){
         && $(this).offset().top + $(this).height() > window.pageYOffset + 10
 //but ends in visible area
 //+ 10 allows you to change hash before it hits the top border
+        && bro_key!=1
         ) {
             window.location.hash = $(this).attr('id');
         }
+      else if( bro_key==1)
+      {
+          document.getElementById(section_det[(ie_i++)%6][0]).scrollIntoView();
+      }
+
     });
 });
