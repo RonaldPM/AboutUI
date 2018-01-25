@@ -93,9 +93,9 @@ input[type=text], select, textarea {
 		display: none;
 	}
     .about{
-		width:98%;
-		margin-left: 10px;
-		margin-right: 10px;
+		float: none;
+		width: 95%;
+		margin-left: 2px;
 	}
 }
 
@@ -146,10 +146,9 @@ input[type=text], select, textarea {
 		display: none;
 	}
     .sponsor{
-		width:98%;
-		margin-left: 10px;
-		margin-right: 10px;
-
+		float: none;
+		width: 95%;
+		margin-left: 2px;
 	}
 }
 
@@ -600,7 +599,7 @@ input[type=text], select, textarea {
 }
 @media screen and (max-width:1000px){
     .contact{
-		height:120vh;
+		height:100vh;
 	}
     .heading5{
         float: left;
@@ -623,6 +622,11 @@ input[type=text], select, textarea {
 	}
 	.heading5{
 		display: none;
+	}
+	.cont{
+		float: none;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 .custom-button{
