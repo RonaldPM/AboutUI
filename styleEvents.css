@@ -20,13 +20,19 @@ header.custom-header{
 .mdl-layout__header{
   background-color: #282741;
 }
-/*@media (max-width: 512px)  and (min-resolution: 1.5dppx),
+@media (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
     background-image: url('images/event-bg.jpg');
   }
 }
-@media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
+#more{
+  display:none;
+}
+#mobutton{
+  display: block;
+}
+/*@media (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
     background-image: url('images/event-bg.jpg');
@@ -37,7 +43,8 @@ header.custom-header{
   body::before {
     background-image: url('images/event-bg.jpg');
   }
-}*/
+}
+*/
 body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -50,7 +57,6 @@ body .demo-blog {
   margin: 0 auto;
   flex-shrink: 0;
 }
-
 .demo-blog.mdl-layout .mdl-layout__content {
   padding-top: 230px;
   position: relative;
@@ -141,7 +147,7 @@ body .demo-blog {
   order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/image1().jpg');
+  background-image: url('images/image1(0).jpg');
 }
 .demo-blog .something-else .mdl-card__media {
   display: flex;
@@ -172,19 +178,46 @@ body .demo-blog {
   border-bottom-right-radius: 2px;
 }
 .demo-blog .gaming .mdl-card__media {
-  background-image: url('images/image2.jpg');
+  background-image: url('images/gaming.jpg');
 }
-.demo-blog .open-mic .mdl-card__media {
-  background-image: url('images/open-mic.jpg');
+.demo-blog .smart-city .mdl-card__media {
+  background-image: url('images/smart-city.jpg');
 }
-.demo-blog .event2 .mdl-card__media {
-  background-image: url('images/event3.jpg');
+.demo-blog .hackathon .mdl-card__media {
+  background-image: url('images/hackathon.jpg');
 }
-.demo-blog .event3 .mdl-card__media {
+.demo-blog .tech-hunt .mdl-card__media {
+  background-image: url('images/tech-hunt.jpg');
+}
+.demo-blog .code-fights .mdl-card__media {
+  background-image: url('images/code-fights.jpg');
+}
+.demo-blog .line-x .mdl-card__media {
+  background-image: url('images/line-x.jpg');
+}
+.demo-blog .bridge .mdl-card__media {
+  background-image: url('images/bridge.jpg');
+}
+.demo-blog .racing .mdl-card__media {
+  background-image: url('images/racing.jpg');
+}
+.demo-blog .robo-wars .mdl-card__media {
   background-image: url('images/robo-wars.jpg');
 }
-.demo-blog .event4 .mdl-card__media {
-  background-image: url('images/dance.jpg');
+.demo-blog .circuit .mdl-card__media {
+  background-image: url('images/circuit.jpg');
+}
+.demo-blog .blueprint .mdl-card__media {
+  background-image: url('images/blueprint.jpg');
+}
+.demo-blog .murder .mdl-card__media {
+  background-image: url('images/murder.jpg');
+}
+.demo-blog .detect .mdl-card__media {
+  background-image: url('images/detect.jpg');
+}
+.demo-blog .quiz .mdl-card__media {
+  background-image: url('images/quiz.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
