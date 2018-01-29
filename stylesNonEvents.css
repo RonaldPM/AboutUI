@@ -2,7 +2,7 @@ html{
   overflow: auto;
 }
 body::before {
-   background-color: #2C3A47;
+    background-color: #282741;
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -14,11 +14,8 @@ body::before {
     top: 0;
     position: fixed;
 }
-#c{
-  z-index:1;position:absolute;top:0;height:100%;width: 100%;
-}
 header.custom-header{
-  background-color: #2C3A47;
+  background-color: #282741;
 }
 .mdl-layout__header{
   background-color: #282741;
