@@ -8,97 +8,71 @@ var section_det=[
 ];
 
 var ie_i=0;
-$(function () {
-    var a=$('#about').position().top;
-    var spo=$('#sponsors').position().top;
-    var spe=$('#specials').position().top;
-    var dev=$('#developers').position().top;
-    var h=$('#heads').position().top;
-    var c=$('#contacts').position().top;
-  $(".mdl-layout__content").on("scroll", function () {
-    var key = 0;
 
-    if ($(this).scrollTop() >= a ){
-      key = 0;
-    }
-    if ($(this).scrollTop() >= spo) {
-      key = 1;
-    }
-    if ($(this).scrollTop() >= spe) {
-      key = 2;
-    }
-    if ($(this).scrollTop() >= dev) {
-      key = 3;
-    }
-    if ($(this).scrollTop() >= h) {
-      key = 4;
-    }
-    if ($(this).scrollTop() >= c){
-      key = 5;
-    }
-    document.getElementById('nav_title_id').innerHTML = section_det[key][0];
-    document.getElementById('scroll_nav_bar_inner').style.background = "#" + section_det[key][1];
-  });
-});
 // alert(sec_det["About"][0]);
 // When the user scrolls down 20px from the top of the document, slide down the navbar
-/*var key=0;
-$(".mdl-layout__content").on('scroll', function () {
-  alert("scrolling");
-  if ($(this).scrollTop() >= $('#about').position().top) {
-    key = 0;
-  }
-});
-$(document).on('scroll', function () {
-  if ($(this).scrollTop() >= $('#sponsors').position().top) {
-    key = 1;
-  }
-});
-$(document).on('scroll', function () {
-  if ($(this).scrollTop() >= $('#specials').position().top) {
-    key = 2;
-  }
-});
-$(document).on('scroll', function () {
-  if ($(this).scrollTop() >= $('#developers').position().top) {
-    key = 3;
-  }
-});
-$(document).on('scroll', function () {
-  if ($(this).scrollTop() >= $('#heads').position().top) {
-    key = 4;
-  }
-});
-$(document).on('scroll', function () {
-  if ($(this).scrollTop() >= $('#contacts').position().top) {
-    key = 5;
-  }
-});*/
-/*if(window.location.hash.endsWith("about"))
-{
-  key=0;
+window.onscroll = function() {scrollFunction()};
+var key=0;
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll_nav_bar").style.display = "block";
+
+        if(window.location.hash.endsWith("about"))
+        {
+          key=0;
+        }
+        else if(window.location.hash.endsWith("sponsors"))
+        {
+          key=1;
+        }
+        else if(window.location.hash.endsWith("specials"))
+        {
+          key=2;
+        }
+        else if(window.location.hash.endsWith("developers"))
+        {
+          key=3;
+        }
+        else if(window.location.hash.endsWith("heads"))
+        {
+          key=4;
+        }
+        else if(window.location.hash.endsWith("contact"))
+        {
+          key=5;
+        }
+        document.getElementById('nav_title_id').innerHTML=section_det[key][0];
+        document.getElementById('scroll_nav_bar_inner').style.background="#" + section_det[key][1];
+        // console.log(window.location.hash);
+        // console.log(key);
+    } else {
+        document.getElementById("scroll_nav_bar").style.top = "none";
+    }
 }
-else if(window.location.hash.endsWith("sponsors"))
-{
-  key=1;
+
+var bro_key=0;
+// detect IE8 and above, and edge
+if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+    bro_key=1;
 }
-else if(window.location.hash.endsWith("specials"))
-{
-  key=2;
-}
-else if(window.location.hash.endsWith("developers"))
-{
-  key=3;
-}
-else if(window.location.hash.endsWith("heads"))
-{
-  key=4;
-}
-else if(window.location.hash.endsWith("contact"))
-{
-  key=5;
-}*/
-$("a[href^=#]").on("click", function(e) {
-   e.preventDefault();
-   history.pushState({}, "", this.href);
+
+
+$(document).bind('scroll',function(e){
+    $('.scrollclass').each(function(){
+        if (
+           $(this).offset().top < window.pageYOffset + 10
+//begins before top
+        && $(this).offset().top + $(this).height() > window.pageYOffset + 10
+//but ends in visible area
+//+ 10 allows you to change hash before it hits the top border
+        && bro_key!=1
+        ) {
+            window.location.hash = $(this).attr('id');
+        }
+      else if( bro_key==1)
+      {
+          document.getElementById(section_det[(ie_i++)%6][0]).scrollIntoView();
+      }
+
+    });
 });
