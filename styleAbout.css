@@ -1,6 +1,14 @@
 body{
 	margin: 0;
 }
+@font-face {
+    font-family: theFont;
+    src: url(fonts/timeburnernormal.ttf);
+
+}
+.land{
+	display: none;
+}
 .mdl-layout__drawer-button{
 	/* margin-top:18px; */
 }
@@ -79,6 +87,26 @@ input[type=text], select, textarea {
 	font-family: 'Roboto', sans-serif;
 }
 @media screen and (max-width:1000px){
+		 @media screen and (orientation:landscape) {
+ 	
+ 	html{
+ 		overflow: hidden;
+ 		width: 100%;
+ 	}
+
+ 	.land{
+ 		width: 45vw;
+ 		margin-left: auto;
+ 		margin-top: 5vh;
+ 		margin-right: auto;
+ 		display: block;
+ 		align-content:center;
+ 	}
+ 	.main{
+ 		display: none;
+ 	}
+ }
+
     .section1{
 		height:120vh;
 	}
